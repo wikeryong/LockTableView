@@ -258,7 +258,7 @@ public class UnLockColumnAdapter extends RecyclerView.Adapter<UnLockColumnAdapte
             //设置布局
             LinearLayout.LayoutParams textViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT);
-            textViewParams.setMargins(45, 45, 45, 45);
+            textViewParams.setMargins(45, 30, 45, 30);
             textViewParams.height = DisplayUtil.dip2px(mContext, mMaxHeight);
             if (isLockFristColumn) {
                 textViewParams.width = DisplayUtil.dip2px(mContext, mColumnMaxWidths.get(i+1));
