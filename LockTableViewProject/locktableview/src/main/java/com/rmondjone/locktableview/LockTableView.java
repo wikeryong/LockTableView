@@ -474,7 +474,7 @@ public class LockTableView {
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) mColumnTitleView.getLayoutParams();
             layoutParams.width = DisplayUtil.dip2px(mContext, mColumnMaxWidths.get(0));
             layoutParams.height = DisplayUtil.dip2px(mContext, mRowMaxHeights.get(0));
-            layoutParams.setMargins(45, 45, 45, 45);
+            layoutParams.setMargins(45, 30, 45, 30);
             mColumnTitleView.setLayoutParams(layoutParams);
             //构造滚动视图
             createScollview(mLockScrollView, mTableFristData, true);
@@ -653,7 +653,7 @@ public class LockTableView {
             //设置布局
             LinearLayout.LayoutParams textViewParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT);
-            textViewParams.setMargins(45, 45, 45, 45);
+            textViewParams.setMargins(45, 20, 45, 20);
             textView.setLayoutParams(textViewParams);
             ViewGroup.LayoutParams textViewParamsCopy = textView.getLayoutParams();
             if (isLockFristColumn) {

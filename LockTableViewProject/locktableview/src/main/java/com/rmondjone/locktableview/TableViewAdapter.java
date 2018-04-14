@@ -209,24 +209,24 @@ public class TableViewAdapter extends RecyclerView.Adapter<TableViewAdapter.Tabl
             mUnLockAdapter.setOnItemSelectedListenter(new OnItemSelectedListenter() {
                 @Override
                 public void onItemSelected(View view, int position) {
-                    RecyclerView.LayoutManager mLockLayoutManager = holder.mLockRecyclerView.getLayoutManager();
-                    int itemCount=mLockLayoutManager.getItemCount();
-                    View item=mLockLayoutManager.getChildAt(position+1);
-                    item.setBackgroundColor(ContextCompat.getColor(mContext,mOnItemSeletor));
-                    for(int i=0;i<itemCount;i++){
-                        if(i!=position){
-                            mLockLayoutManager.getChildAt(i+1).setBackgroundColor(Color.TRANSPARENT);
-                        }
-                    }
-                    RecyclerView.LayoutManager mUnLockLayoutManager = holder.mMainRecyclerView.getLayoutManager();
-                    int itemUnLockCount=mUnLockLayoutManager.getItemCount();
-                    View mUnlockItem=mUnLockLayoutManager.getChildAt(position+1);
-                    mUnlockItem.setBackgroundColor(ContextCompat.getColor(mContext,mOnItemSeletor));
-                    for(int i=0;i<itemUnLockCount;i++){
-                        if(i!=position){
-                            mUnLockLayoutManager.getChildAt(i+1).setBackgroundColor(Color.TRANSPARENT);
-                        }
-                    }
+//                    RecyclerView.LayoutManager mLockLayoutManager = holder.mLockRecyclerView.getLayoutManager();
+//                    int itemCount=mLockLayoutManager.getItemCount();
+//                    View item=mLockLayoutManager.getChildAt(position+1);
+//                    item.setBackgroundColor(ContextCompat.getColor(mContext,mOnItemSeletor));
+//                    for(int i=0;i<itemCount;i++){
+//                        if(i!=position){
+//                            mLockLayoutManager.getChildAt(i+1).setBackgroundColor(Color.TRANSPARENT);
+//                        }
+//                    }
+//                    RecyclerView.LayoutManager mUnLockLayoutManager = holder.mMainRecyclerView.getLayoutManager();
+//                    int itemUnLockCount=mUnLockLayoutManager.getItemCount();
+//                    View mUnlockItem=mUnLockLayoutManager.getChildAt(position+1);
+//                    mUnlockItem.setBackgroundColor(ContextCompat.getColor(mContext,mOnItemSeletor));
+//                    for(int i=0;i<itemUnLockCount;i++){
+//                        if(i!=position){
+//                            mUnLockLayoutManager.getChildAt(i+1).setBackgroundColor(Color.TRANSPARENT);
+//                        }
+//                    }
                 }
             });
             if (mOnItemClickListenter != null) {

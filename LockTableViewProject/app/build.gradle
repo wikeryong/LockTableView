@@ -12,6 +12,9 @@ android {
         versionName "1.0.9"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    lintOptions {
+        abortOnError false
+    }
     dexOptions {
         javaMaxHeapSize "4g" //修改堆栈内存大小
     }

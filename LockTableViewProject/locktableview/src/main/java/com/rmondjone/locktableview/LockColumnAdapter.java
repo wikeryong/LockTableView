@@ -98,7 +98,7 @@ public class LockColumnAdapter extends RecyclerView.Adapter<LockColumnAdapter.Lo
         } else {
             layoutParams.height = DisplayUtil.dip2px(mContext, mRowMaxHeights.get(position));
         }
-        layoutParams.setMargins(45, 30, 45, 30);
+        layoutParams.setMargins(45, 20, 45, 20);
         holder.mTextView.setLayoutParams(layoutParams);
         //设置颜色
         if (!isLockFristRow) {
